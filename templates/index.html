@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{% block title %} Welcome to the Watt-Monster-Controll Panel! {% endblock %}</h1>
+<div>
+    <form>
+        {% if status == 'Server online!' %}
+        <button id="offBtn" class="btn btn-lg btn-primary" type="submit" name="Turn off">Turn off...  =/</button>
+
+        {% else %}
+
+        <button id="onBtn" class="btn btn-lg btn-primary" type="submit" name="Turn ON!">EAT THE POWERBILL!</button>
+
+        {% endif %}
+    </form>
+</div>
+
+{% endblock %}
