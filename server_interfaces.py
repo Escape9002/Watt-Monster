@@ -6,6 +6,7 @@ INTERFACE = os.environ.get('INTERFACE')
 HOSTNAME = os.environ.get('HOSTNAME')
 USERNAME = os.environ.get('USERNAME')
 PASSWORD = os.environ.get('PASSWORD')
+HOSTNAME_MGMT = os.environ.get('HOSTNAME_MGMT')
 
 def check_ping():
     response = os.system("ping -c 1 " + HOSTNAME)
@@ -13,13 +14,12 @@ def check_ping():
         pingstatus = "Server online!"
     else:
         pingstatus = "Server offline -_-"
-        
     
     return pingstatus
 
 from wakeonlan import send_magic_packet
 def turn_on():
-    send_magic_packet(INTERFACE)
+    send_magic_packet(INTERFACE, ip_address=HOSTNAME_MGMT)
 
 
 
