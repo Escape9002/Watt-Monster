@@ -10,8 +10,7 @@ def index():
 
     if request.method == 'POST':
         if request.form['onBtn']:
-            server_interfaces.turn_on()
-       
+            server_interfaces.turn_on()       
 
     return render_template("index.html", status=status)
     
