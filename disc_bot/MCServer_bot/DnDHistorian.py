@@ -26,14 +26,8 @@ commands = {
     "!crafty <action>": "Special things to do ^^, for example:\n   coords"
     }
 
-def check_perm(ctx, user, message ,role : str):
-    role = discord.utils.find(lambda r: r.name == 'Voltshrouds', ctx.message.guild.roles)
-    if not role in user.roles:
-        message.channel.send("You dont have permission to do that.")
-        return False
-
 @client.event
-async def on_message(ctx, user: discord.Member, message):
+async def on_message(message):
     if message.author == client.user:
         return
     
@@ -48,26 +42,20 @@ async def on_message(ctx, user: discord.Member, message):
             await message.channel.send("Not yet implemented")
 
         case "!startle WattMonster":
-            check_perm(ctx, user, message, "Voltshroud")
-            
             await message.channel.send("BOOO!")
             awake_the_monster(WATTMONSTER_IP, WATTMONSTER_MAC)
             await message.channel.send("The monster has awakened!")
 
         case "!sleep WattMonster":
-            check_perm(ctx, user, message, "Voltshroud")
-
             await message.channel.send("Enough power for today! Go to SLEEP!")
             send_to_sleep('root', WATTMONSTER_IP)
             await message.channel.send("The monster has fallen asleep")
         
         case "!crafty":
-            check_perm(ctx, user, message, "MCServer")
             await message.channel.send(
                 "To join the server, you have to join my VPN. Cant buy a domain atm. =/\nOn this server, there shall only be communism!\n\nJoin link: https://login.tailscale.com/admin/invite/EMGA7dZt6E4\nIP-Adress: 10.6.6.5\n")
             
         case "!crafty coords":
-            check_perm(ctx, user, message, "MCServer")
             important_coords = {
                 "our base" : "800 800 (i hope)",
                 "Unterwassertempel" : "1990 2100",
@@ -80,7 +68,6 @@ async def on_message(ctx, user: discord.Member, message):
             await message.channel.send(msg)
 
         case "!crafty status":
-            check_perm(ctx, user, message, "MCServer")
             if is_up(WATTMONSTER_IP):
                 await message.channel.send("Crafty is ONLINE!")
             else:
