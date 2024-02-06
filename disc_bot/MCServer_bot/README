@@ -1,0 +1,5 @@
+to run, build normally, then run with 
+
+```
+docker run --env-file .env dnd-historian
+```
