@@ -20,10 +20,10 @@ client = discord.Client(intents=intents)
 commands = {
     "!help": "Displays this message", 
     "!info": "I dont know yet....maybe some stats for the future", 
-    "!startle <name>": "Wakes up a pc/server. Currenty available:\nWattMonster",
-    "!sleep <name>": "Sends a PC to sleep. Currently available:\nWattMonster",
+    "!startle <name>": "Wakes up a pc/server. Currenty available:\n   WattMonster",
+    "!sleep <name>": "Sends a PC to sleep. Currently available:\n   WattMonster",
     "!crafty": "Returns info about the MC server!",
-    "!crafty <action>": "Special things to do ^^, for example:\ncoords"
+    "!crafty <action>": "Special things to do ^^, for example:\n   coords"
     }
 
 @client.event
