@@ -53,7 +53,7 @@ async def on_message(message):
         
         case "!crafty":
             await message.channel.send(
-                "To join the server, you have to join my VPN. Cant buy a domain atm. =/\nOn this server, there shall only be communism!\n\nJoin link: https://login.tailscale.com/admin/invite/EMGA7dZt6E4\nIP-Adress: 10.6.6.5\n")
+                "To join the server, you have to join my VPN. Cant buy a domain atm. =/\nTo accept my routes run: \n```tailscale up --accept-routes```\nIf there are error messages, please read them (and then ask me).\nOn this server, there shall only be communism!\n\nJoin link: https://login.tailscale.com/admin/invite/EMGA7dZt6E4\nIP-Adress: 10.6.6.5\n")
             
         case "!crafty coords":
             important_coords = {
