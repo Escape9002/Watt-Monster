@@ -8,10 +8,10 @@ RUN pip install --upgrade pip && \
 
 RUN apt-get update && apt-get install -y iputils-ping
 
-RUN mkdir -p /usr/src/dnd-historian
+RUN mkdir -p /usr/src/mc-server
 
-WORKDIR /usr/src/dnd-historian
+WORKDIR /usr/src/mc-server
 
 COPY . . 
 
-CMD ["python3", "DnDHistorian.py"]
+CMD ["python3", "MCServer.py"]
