@@ -53,13 +53,16 @@ async def on_message(message):
         
         case "!crafty":
             await message.channel.send(
-                "To join the server, you have to join my VPN. Cant buy a domain atm. =/\nOn this server, there shall only be communism!\n\nJoin link: https://login.tailscale.com/admin/invite/EMGA7dZt6E4\nIP-Adress: 10.6.6.5\nTo accept my routes run: \n```tailscale up --accept-routes```\nIf there are error messages, please read them (and then ask me).")
-            
+                "To join the server, you have to join my VPN. Cant buy a domain atm. =/\nOn this server, there shall only be communism!\n\nJoin link: https://login.tailscale.com/admin/invite/ZE6EcVxEY8Z\nIP-Adress: 100.83.182.14\n")
+        
         case "!crafty coords":
             important_coords = {
                 "our base" : "800 800 (i hope)",
                 "Unterwassertempel" : "1990 2100",
-                "Mossy Höhle" : "2455 2294"
+                "Unterwassertempel (der 2te)" :  "-1200 1000 2",
+                "Mossy Höhle" : "2455 2294",
+                "end" : "-1150 1020 ",
+                " lush cave" : "-37 25 871"
             }
             msg = "The stuff we found until now:\n"    
             for key, desc in important_coords.items():
