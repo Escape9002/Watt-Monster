@@ -24,6 +24,7 @@ def is_up(hostname : str):
 def awake_the_monster(ip:str, mac: str):
     while not is_up(ip):
         send_magic_packet(mac)
+    return 
 
 def send_to_sleep(usr: str, ip:str):
     
