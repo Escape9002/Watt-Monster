@@ -1,0 +1,25 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/service-widgets
+
+- resources:
+        cpu: true
+        memory: true
+        disk: /
+        uptime: true
+        refresh: 3000 # optional, in ms
+        diskUnits: bytes # optional, bytes (default) or bbytes. Only applies to disk
+
+- openmeteo:
+        label: Dresden
+        latitude: 51.03320
+        longitude: 13.441795
+        timezone: Europe/Berlin
+        units: metric
+        cache: 5
+        format:
+                maximumFractionDigits: 1
+
+- search:
+    provider: duckduckgo
+    target: _blank
