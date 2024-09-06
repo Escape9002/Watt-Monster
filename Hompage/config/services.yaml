@@ -60,9 +60,6 @@
             enableUser: true # optional, defaults to false
             showEpisodeNumber: true # optional, defaults to false
             expandOneStreamToTwoRows: false # optional, defaults to true
-                
-
- 
 
 - Watt-Morpheus:
     - Watt-Morpheus:
@@ -82,6 +79,7 @@
         icon: grafana
         href: http://{{HOMEPAGE_VAR_GRAFANA_IP}}:3000/d/IfgdXjtnk
 
+
     - Portainer:
         description: running containers on a potato
         href: https://{{HOMEPAGE_VAR_PORTAINER_IP}}:9443
@@ -91,4 +89,31 @@
             url: https://{{HOMEPAGE_VAR_PORTAINER_IP}}:9443
             env: 2
             key: {{HOMEPAGE_VAR_PORTAINER_KEY}}
-    
+
+- External Clicks:
+    - Watt-Monster:
+            href: https://{{HOMEPAGE_VAR_WATTMONSTER_EXT_IP}}:8006
+            description: cause my phone has more ram!
+            icon: proxmox
+            siteMonitor: https://{{HOMEPAGE_VAR_WATTMONSTER_EXT_IP}}:8006
+
+    - Watt-Morpheus:
+            href: https://{{HOMEPAGE_VAR_WATTMORPHEUS_EXT_IP}}:8006
+            description: cause my phone has more ram!
+            icon: proxmox
+            siteMonitor: https://{{HOMEPAGE_VAR_WATTMORPHEUS_EXT_IP}}:8006
+            
+    - Grafana External:
+        description: Monitoring
+        icon: grafana
+        href: http://{{HOMEPAGE_VAR_GRAFANA_EXT_IP}}:3000/d/IfgdXjtnk
+
+    - Portainer:
+        description: running containers on a potato
+        href: https://{{HOMEPAGE_VAR_PORTAINER_EXT_IP}}:9443
+        icon: portainer
+        
+    - PFSense:
+        href: https://{{HOMEPAGE_VAR_PFSENSE_EXT_IP}}/
+        description: PFsense
+        icon: pfsense
