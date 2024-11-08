@@ -10,6 +10,10 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 GUILD = os.getenv('DISCORD_GUILD')
 WATTMONSTER_MAC = os.getenv('WATTMONSTER_MAC')
 WATTMONSTER_IP = os.getenv('WATTMONSTER_IP')
+GAMING_LAPTOP_MAC = os.getenv('GAMING_LAPTOP_MAC')
+GAMING_LAPTOP_IP = os.getenv('GAMING_LAPTOP_IP')
+MY_USER_ID= os.getenv('MY_USER_ID')
+
 CRAFTY_IP = os.getenv('CRAFTY_IP')
 
 
@@ -25,7 +29,7 @@ commands = {
     "!startle <name>": "Wakes up a pc/server. Currenty available:\n   WattMonster",
     "!sleep <name>": "Sends a PC to sleep. Currently available:\n   WattMonster",
     "!crafty": "Returns info about the MC server!",
-    "!crafty <action>": "Special things to do ^^, for example:\n- - coords\n- - whitelist"
+    "!crafty <action>": "Special things to do ^^, for example:\n- - coords\n- - whitelist <name>"
     }
 
 @client.event
@@ -44,6 +48,16 @@ async def on_message(message):
         case "!info":
             await message.channel.send("Not yet implemented, maybe try '''!help''' instead")
             return
+        
+        case "!startle Laptop":
+            if(int(message.author.id) == int(MY_USER_ID) ):
+                await message.channel.send("BOOO!")
+                awake_the_monster(GAMING_LAPTOP_IP, GAMING_LAPTOP_MAC)
+                await message.channel.send("The laptop has awakened!")
+            else:
+                await message.channel.send("Nope, this is my laptop, not yours " )
+            return
+
 
         case "!startle WattMonster":
             await message.channel.send("BOOO!")
@@ -86,12 +100,14 @@ async def on_message(message):
             else:
                 await message.channel.send("sorry, seems stuff is offline...might have to startle the WattMonster...")
             return
+        
+        
 
     if message.content.startswith('!crafty whitelist'):
         player_names = message.content.replace('!crafty whitelist', '').strip()
         whitelist(player_names)
         
-        await message.channel.send(f'Whitelisted player {player_names}')
+        await message.channel.send(f'Whitelisted player {player_names}!')
 
 def main():
     client.run(TOKEN)
