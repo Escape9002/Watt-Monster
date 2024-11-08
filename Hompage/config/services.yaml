@@ -79,16 +79,14 @@
         icon: grafana
         href: http://{{HOMEPAGE_VAR_GRAFANA_IP}}:3000/d/IfgdXjtnk
 
-
-    - Portainer:
-        description: running containers on a potato
-        href: https://{{HOMEPAGE_VAR_PORTAINER_IP}}:9443
-        icon: portainer
+    - WhatsUpDocker:
+        href: http://{{HOMEPAGE_VAR_WUD_IP}}:{{HOMEPAGE_VAR_WUD_PORT}}/containers
+        description: Watching them updates
+        icon: wud
         widget:
-            type: portainer
-            url: https://{{HOMEPAGE_VAR_PORTAINER_IP}}:9443
-            env: 2
-            key: {{HOMEPAGE_VAR_PORTAINER_KEY}}
+            type: whatsupdocker
+            url: http://{{HOMEPAGE_VAR_WUD_IP}}:{{HOMEPAGE_VAR_WUD_PORT}}
+            fields: ["monitoring", "updates"]
 
 - External Clicks:
     - Watt-Monster:
@@ -108,11 +106,6 @@
         icon: grafana
         href: http://{{HOMEPAGE_VAR_GRAFANA_EXT_IP}}:3000/d/IfgdXjtnk
 
-    - Portainer:
-        description: running containers on a potato
-        href: https://{{HOMEPAGE_VAR_PORTAINER_EXT_IP}}:9443
-        icon: portainer
-        
     - PFSense:
         href: https://{{HOMEPAGE_VAR_PFSENSE_EXT_IP}}/
         description: PFsense

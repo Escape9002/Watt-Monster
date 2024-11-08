@@ -6,13 +6,25 @@
     - Github:
         - abbr: GH
           href: https://github.com/Escape9002
+    - OPAL:
+        - abbr: OP
+          href: https://bildungsportal.sachsen.de/opal/auth/repository/catalog/3571713
 
 - Social:
     - Reddit:
         - abbr: RE
           href: https://reddit.com/
+    - Element:
+        - abbr: TUD
+          href: https://matrix.tu-dresden.de/#/room/#bus-vorlesung:tu-dresden.de
+    - Element:
+        - abbr: EL
+          href: https://app.element.io/#/home
 
 - Entertainment:
     - YouTube:
         - abbr: YT
           href: https://youtube.com/
+    - CCC:
+        - abbr: CC
+          href: https://media.ccc.de/

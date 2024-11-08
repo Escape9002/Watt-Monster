@@ -8,3 +8,4 @@ id_rsa.pub
 
 gitlab/config/*
 !gitlab/config/gitlab.rb
+Hompage/config/logs/homepage.log
