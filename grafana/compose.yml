@@ -1,0 +1,28 @@
+services:
+  grafana:
+    image: grafana/grafana-oss
+    container_name: grafana
+    restart: unless-stopped
+    networks:
+      - influx-graf
+
+    ports:
+    - 3000:3000
+
+    volumes:
+      - type: volume
+        source: grafana-data
+        target: /var/lib/grafana
+
+volumes:
+  grafana-data:
+    driver: local
+    driver_opts:
+      type: none
+      o: 'bind'
+      device: '${MOUNT_PATH}/grafana_data'
+
+networks:
+  influx-graf:
+    name: InfluxGraf
+    driver: bridge

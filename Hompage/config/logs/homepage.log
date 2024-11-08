@@ -17567,3 +17567,916 @@
     port: 8006
   }
 ]
+[2024-11-08T17:18:47.706Z] error: <httpProxy> Error calling https://100.106.98.82:8006/...
+[2024-11-08T17:18:47.713Z] error: <httpProxy> [
+  500,
+  Error: connect ETIMEDOUT 100.106.98.82:8006
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -110,
+    code: 'ETIMEDOUT',
+    syscall: 'connect',
+    address: '100.106.98.82',
+    port: 8006
+  }
+]
+[2024-11-08T17:18:47.721Z] error: <httpProxy> Error calling https://100.72.205.68:8006/...
+[2024-11-08T17:18:47.721Z] error: <httpProxy> [
+  500,
+  Error: connect ETIMEDOUT 100.72.205.68:8006
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -110,
+    code: 'ETIMEDOUT',
+    syscall: 'connect',
+    address: '100.72.205.68',
+    port: 8006
+  }
+]
+[2024-11-08T17:21:02.872Z] error: <httpProxy> Error calling https://100.106.98.82:8006/...
+[2024-11-08T17:21:02.874Z] error: <httpProxy> [
+  500,
+  Error: connect ETIMEDOUT 100.106.98.82:8006
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -110,
+    code: 'ETIMEDOUT',
+    syscall: 'connect',
+    address: '100.106.98.82',
+    port: 8006
+  }
+]
+[2024-11-08T17:21:02.875Z] error: <httpProxy> Error calling https://100.72.205.68:8006/...
+[2024-11-08T17:21:02.876Z] error: <httpProxy> [
+  500,
+  Error: connect ETIMEDOUT 100.72.205.68:8006
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -110,
+    code: 'ETIMEDOUT',
+    syscall: 'connect',
+    address: '100.72.205.68',
+    port: 8006
+  }
+]
+[2024-11-08T17:23:22.135Z] error: <httpProxy> Error calling https://100.72.205.68:8006/...
+[2024-11-08T17:23:22.138Z] error: <httpProxy> [
+  500,
+  Error: connect ETIMEDOUT 100.72.205.68:8006
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -110,
+    code: 'ETIMEDOUT',
+    syscall: 'connect',
+    address: '100.72.205.68',
+    port: 8006
+  }
+]
+[2024-11-08T17:23:22.149Z] error: <httpProxy> Error calling https://100.106.98.82:8006/...
+[2024-11-08T17:23:22.150Z] error: <httpProxy> [
+  500,
+  Error: connect ETIMEDOUT 100.106.98.82:8006
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -110,
+    code: 'ETIMEDOUT',
+    syscall: 'connect',
+    address: '100.106.98.82',
+    port: 8006
+  }
+]
+[2024-11-08T18:00:55.923Z] error: <httpProxy> Error calling https://192.168.0.12:9443/api/endpoints/2/docker/containers/json...
+[2024-11-08T18:00:55.933Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.12:9443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.12',
+    port: 9443
+  }
+]
+[2024-11-08T18:00:55.939Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://192.168.0.12:9443/api/endpoints/2/docker/containers/json?all=1
+[2024-11-08T18:00:58.990Z] error: <httpProxy> Error calling https://192.168.0.12:9443/api/endpoints/2/docker/containers/json...
+[2024-11-08T18:00:58.991Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.12:9443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.12',
+    port: 9443
+  }
+]
+[2024-11-08T18:00:58.992Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://192.168.0.12:9443/api/endpoints/2/docker/containers/json?all=1
+[2024-11-08T18:01:42.381Z] error: <httpProxy> Error calling https://192.168.0.12:9443/api/endpoints/2/docker/containers/json...
+[2024-11-08T18:01:42.383Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.12:9443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.12',
+    port: 9443
+  }
+]
+[2024-11-08T18:01:42.384Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://192.168.0.12:9443/api/endpoints/2/docker/containers/json?all=1
+[2024-11-08T18:04:48.727Z] error: <httpProxy> Error calling https://192.168.0.10:8006/...
+[2024-11-08T18:04:49.035Z] error: <httpProxy> [
+  500,
+  Error: socket hang up
+      at connResetException (node:internal/errors:720:14)
+      at TLSSocket.socketOnEnd (node:_http_client:525:23)
+      at TLSSocket.emit (node:events:529:35)
+      at endReadableNT (node:internal/streams/readable:1400:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    code: 'ECONNRESET'
+  }
+]
+[2024-11-08T18:04:55.031Z] error: <httpProxy> Error calling https://192.168.0.12:9443/api/endpoints/2/docker/containers/json...
+[2024-11-08T18:04:55.037Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.12:9443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.12',
+    port: 9443
+  }
+]
+[2024-11-08T18:04:55.040Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://192.168.0.12:9443/api/endpoints/2/docker/containers/json?all=1
+[2024-11-08T18:39:56.762Z] error: <httpProxy> Error calling https://192.168.0.110:8443/...
+[2024-11-08T18:39:56.775Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.110:8443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.110',
+    port: 8443
+  }
+]
+[2024-11-08T18:39:58.869Z] error: <httpProxy> Error calling https://192.168.0.110:8443/...
+[2024-11-08T18:39:58.870Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.110:8443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.110',
+    port: 8443
+  }
+]
+[2024-11-08T18:39:58.876Z] error: <minecraftProxyHandler> Error: connect EHOSTUNREACH 192.168.0.110:25565
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+[2024-11-08T18:40:00.023Z] error: <httpProxy> Error calling https://192.168.0.9/api/v2/status/system...
+[2024-11-08T18:40:00.024Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.9:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.9',
+    port: 443
+  }
+]
+[2024-11-08T18:40:01.980Z] error: <httpProxy> Error calling http://10.1.1.11:8096/emby/Sessions...
+[2024-11-08T18:40:01.981Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.1.1.11:8096
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.1.1.11',
+    port: 8096
+  }
+]
+[2024-11-08T18:40:03.095Z] error: <httpProxy> Error calling https://192.168.0.9/api/v2/status/interfaces...
+[2024-11-08T18:40:03.097Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.9:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.9',
+    port: 443
+  }
+]
+[2024-11-08T18:40:05.117Z] error: <httpProxy> Error calling http://10.1.1.10/api/v2.0/pool...
+[2024-11-08T18:40:05.119Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.1.1.10:80
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.1.1.10',
+    port: 80
+  }
+]
+[2024-11-08T18:40:05.122Z] error: <credentialedProxyHandler> HTTP Error 500 calling http://10.1.1.10/api/v2.0/pool
+[2024-11-08T18:40:05.125Z] error: <httpProxy> Error calling http://10.1.1.10/api/v2.0/system/info...
+[2024-11-08T18:40:05.127Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.1.1.10:80
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.1.1.10',
+    port: 80
+  }
+]
+[2024-11-08T18:40:05.128Z] error: <credentialedProxyHandler> HTTP Error 500 calling http://10.1.1.10/api/v2.0/system/info
+[2024-11-08T18:40:07.083Z] error: <httpProxy> Error calling https://192.168.0.12:9443/api/endpoints/2/docker/containers/json...
+[2024-11-08T18:40:07.084Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.12:9443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.12',
+    port: 9443
+  }
+]
+[2024-11-08T18:40:07.085Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://192.168.0.12:9443/api/endpoints/2/docker/containers/json?all=1
+[2024-11-08T18:40:14.536Z] error: <httpProxy> Error calling http://10.1.1.11:8096/emby/Items/Counts...
+[2024-11-08T18:40:14.537Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.1.1.11:8096
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.1.1.11',
+    port: 8096
+  }
+]
+[2024-11-08T18:40:18.173Z] error: <httpProxy> Error calling http://10.1.1.10/api/v2.0/alert/list...
+[2024-11-08T18:40:18.175Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.1.1.10:80
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.1.1.10',
+    port: 80
+  }
+]
+[2024-11-08T18:40:18.176Z] error: <credentialedProxyHandler> HTTP Error 500 calling http://10.1.1.10/api/v2.0/alert/list
+[2024-11-08T18:40:18.180Z] error: <httpProxy> Error calling http://10.1.1.10/api/v2.0/system/info...
+[2024-11-08T18:40:18.183Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.1.1.10:80
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.1.1.10',
+    port: 80
+  }
+]
+[2024-11-08T18:40:18.185Z] error: <credentialedProxyHandler> HTTP Error 500 calling http://10.1.1.10/api/v2.0/system/info
+[2024-11-08T18:40:18.189Z] error: <httpProxy> Error calling http://10.1.1.10/api/v2.0/pool...
+[2024-11-08T18:40:18.192Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.1.1.10:80
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.1.1.10',
+    port: 80
+  }
+]
+[2024-11-08T18:40:18.193Z] error: <credentialedProxyHandler> HTTP Error 500 calling http://10.1.1.10/api/v2.0/pool
+[2024-11-08T18:40:20.056Z] error: <httpProxy> Error calling https://192.168.0.9/api/v2/status/system...
+[2024-11-08T18:40:20.057Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.9:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.9',
+    port: 443
+  }
+]
+[2024-11-08T18:40:20.060Z] error: <httpProxy> Error calling https://192.168.0.9/api/v2/status/interfaces...
+[2024-11-08T18:40:20.063Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.9:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.9',
+    port: 443
+  }
+]
+[2024-11-08T18:40:20.372Z] error: <httpProxy> Error calling https://192.168.0.110:8443/...
+[2024-11-08T18:40:20.373Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.110:8443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.110',
+    port: 8443
+  }
+]
+[2024-11-08T18:40:20.386Z] error: <minecraftProxyHandler> Error: connect EHOSTUNREACH 192.168.0.110:25565
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+[2024-11-08T18:40:21.308Z] error: <httpProxy> Error calling http://10.1.1.11:8096/emby/Sessions...
+[2024-11-08T18:40:21.309Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.1.1.11:8096
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.1.1.11',
+    port: 8096
+  }
+]
+[2024-11-08T18:40:21.311Z] error: <httpProxy> Error calling http://10.1.1.11:8096/emby/Items/Counts...
+[2024-11-08T18:40:21.312Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.1.1.11:8096
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.1.1.11',
+    port: 8096
+  }
+]
+[2024-11-08T18:40:23.189Z] error: <httpProxy> Error calling https://192.168.0.110:8443/...
+[2024-11-08T18:40:23.190Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.110:8443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.110',
+    port: 8443
+  }
+]
+[2024-11-08T18:40:23.509Z] error: <httpProxy> Error calling https://192.168.0.12:9443/api/endpoints/2/docker/containers/json...
+[2024-11-08T18:40:23.510Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.12:9443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.12',
+    port: 9443
+  }
+]
+[2024-11-08T18:40:23.510Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://192.168.0.12:9443/api/endpoints/2/docker/containers/json?all=1
+[2024-11-08T18:40:25.027Z] error: <httpProxy> Error calling http://10.1.1.10/api/v2.0/system/info...
+[2024-11-08T18:40:25.029Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.1.1.10:80
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.1.1.10',
+    port: 80
+  }
+]
+[2024-11-08T18:40:25.030Z] error: <credentialedProxyHandler> HTTP Error 500 calling http://10.1.1.10/api/v2.0/system/info
+[2024-11-08T18:40:25.035Z] error: <httpProxy> Error calling http://10.1.1.10/api/v2.0/pool...
+[2024-11-08T18:40:25.035Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.1.1.10:80
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.1.1.10',
+    port: 80
+  }
+]
+[2024-11-08T18:40:25.035Z] error: <credentialedProxyHandler> HTTP Error 500 calling http://10.1.1.10/api/v2.0/pool
+[2024-11-08T18:40:25.038Z] error: <httpProxy> Error calling http://10.1.1.10/api/v2.0/alert/list...
+[2024-11-08T18:40:25.041Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.1.1.10:80
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.1.1.10',
+    port: 80
+  }
+]
+[2024-11-08T18:40:25.042Z] error: <credentialedProxyHandler> HTTP Error 500 calling http://10.1.1.10/api/v2.0/alert/list
+[2024-11-08T19:06:17.297Z] error: <httpProxy> Error calling https://192.168.0.9/api/v2/status/system...
+[2024-11-08T19:06:17.504Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.9:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.9',
+    port: 443
+  }
+]
+[2024-11-08T19:06:17.515Z] error: <httpProxy> Error calling https://192.168.0.9/api/v2/status/interfaces...
+[2024-11-08T19:06:17.516Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.9:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.9',
+    port: 443
+  }
+]
+[2024-11-08T19:06:17.648Z] error: <httpProxy> Error calling https://192.168.0.110:8443/...
+[2024-11-08T19:06:17.648Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.110:8443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.110',
+    port: 8443
+  }
+]
+[2024-11-08T19:06:19.647Z] error: <httpProxy> Error calling http://10.1.1.10/api/v2.0/pool...
+[2024-11-08T19:06:19.649Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.1.1.10:80
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.1.1.10',
+    port: 80
+  }
+]
+[2024-11-08T19:06:19.683Z] error: <credentialedProxyHandler> HTTP Error 500 calling http://10.1.1.10/api/v2.0/pool
+[2024-11-08T19:06:19.686Z] error: <httpProxy> Error calling http://10.1.1.10/api/v2.0/system/info...
+[2024-11-08T19:06:19.688Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.1.1.10:80
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.1.1.10',
+    port: 80
+  }
+]
+[2024-11-08T19:06:19.689Z] error: <credentialedProxyHandler> HTTP Error 500 calling http://10.1.1.10/api/v2.0/system/info
+[2024-11-08T19:06:20.438Z] error: <httpProxy> Error calling https://192.168.0.110:8443/...
+[2024-11-08T19:06:20.438Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.110:8443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.110',
+    port: 8443
+  }
+]
+[2024-11-08T19:06:20.441Z] error: <minecraftProxyHandler> Error: connect EHOSTUNREACH 192.168.0.110:25565
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+[2024-11-08T19:06:23.445Z] error: <httpProxy> Error calling https://192.168.0.12:9443/api/endpoints/2/docker/containers/json...
+[2024-11-08T19:06:23.446Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.12:9443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.12',
+    port: 9443
+  }
+]
+[2024-11-08T19:06:23.446Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://192.168.0.12:9443/api/endpoints/2/docker/containers/json?all=1
+[2024-11-08T19:06:25.856Z] error: <httpProxy> Error calling http://10.1.1.11:8096/emby/Sessions...
+[2024-11-08T19:06:25.857Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.1.1.11:8096
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.1.1.11',
+    port: 8096
+  }
+]
+[2024-11-08T19:06:25.878Z] error: <httpProxy> Error calling http://10.1.1.11:8096/emby/Items/Counts...
+[2024-11-08T19:06:25.879Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.1.1.11:8096
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.1.1.11',
+    port: 8096
+  }
+]
+[2024-11-08T19:08:28.436Z] error: <httpProxy> Error calling http://10.1.1.10/api/v2.0/alert/list...
+[2024-11-08T19:08:28.437Z] error: <httpProxy> [
+  500,
+  Error: connect ETIMEDOUT 10.1.1.10:80
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -110,
+    code: 'ETIMEDOUT',
+    syscall: 'connect',
+    address: '10.1.1.10',
+    port: 80
+  }
+]
+[2024-11-08T19:08:28.438Z] error: <credentialedProxyHandler> HTTP Error 500 calling http://10.1.1.10/api/v2.0/alert/list
+[2024-11-08T19:25:02.485Z] error: <httpProxy> Error calling https://192.168.0.9/api/v2/status/system...
+[2024-11-08T19:25:02.486Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.9:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.9',
+    port: 443
+  }
+]
+[2024-11-08T19:25:02.488Z] error: <httpProxy> Error calling https://192.168.0.9/api/v2/status/interfaces...
+[2024-11-08T19:25:02.489Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.9:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.9',
+    port: 443
+  }
+]
+[2024-11-08T19:25:03.011Z] error: <httpProxy> Error calling https://192.168.0.110:8443/...
+[2024-11-08T19:25:03.012Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.110:8443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.110',
+    port: 8443
+  }
+]
+[2024-11-08T19:25:05.861Z] error: <minecraftProxyHandler> Error: connect EHOSTUNREACH 192.168.0.110:25565
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+[2024-11-08T19:25:08.949Z] error: <httpProxy> Error calling https://192.168.0.110:8443/...
+[2024-11-08T19:25:08.950Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.110:8443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.110',
+    port: 8443
+  }
+]
+[2024-11-08T19:25:12.149Z] error: <httpProxy> Error calling https://192.168.0.12:9443/api/endpoints/2/docker/containers/json...
+[2024-11-08T19:25:12.149Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.12:9443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.12',
+    port: 9443
+  }
+]
+[2024-11-08T19:25:12.150Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://192.168.0.12:9443/api/endpoints/2/docker/containers/json?all=1
+[2024-11-08T19:25:21.663Z] error: <httpProxy> Error calling http://10.1.1.10/api/v2.0/alert/list...
+[2024-11-08T19:25:21.664Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.1.1.10:80
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.1.1.10',
+    port: 80
+  }
+]
+[2024-11-08T19:25:21.665Z] error: <credentialedProxyHandler> HTTP Error 500 calling http://10.1.1.10/api/v2.0/alert/list
+[2024-11-08T19:25:24.736Z] error: <httpProxy> Error calling http://10.1.1.11:8096/emby/Sessions...
+[2024-11-08T19:25:24.736Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.1.1.11:8096
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.1.1.11',
+    port: 8096
+  }
+]
+[2024-11-08T19:25:28.769Z] error: <httpProxy> Error calling http://10.1.1.11:8096/emby/Items/Counts...
+[2024-11-08T19:25:28.770Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.1.1.11:8096
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.1.1.11',
+    port: 8096
+  }
+]
+[2024-11-08T19:25:38.111Z] error: <httpProxy> Error calling http://10.1.1.10/api/v2.0/pool...
+[2024-11-08T19:25:38.112Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.1.1.10:80
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.1.1.10',
+    port: 80
+  }
+]
+[2024-11-08T19:25:38.113Z] error: <credentialedProxyHandler> HTTP Error 500 calling http://10.1.1.10/api/v2.0/pool
+[2024-11-08T19:25:38.114Z] error: <httpProxy> Error calling http://10.1.1.10/api/v2.0/system/info...
+[2024-11-08T19:25:38.115Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.1.1.10:80
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.1.1.10',
+    port: 80
+  }
+]
+[2024-11-08T19:25:38.115Z] error: <credentialedProxyHandler> HTTP Error 500 calling http://10.1.1.10/api/v2.0/system/info
+[2024-11-08T19:28:48.853Z] error: <httpProxy> Error calling https://192.168.0.9/api/v2/status/system...
+[2024-11-08T19:28:48.854Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.9:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.9',
+    port: 443
+  }
+]
+[2024-11-08T19:28:48.856Z] error: <httpProxy> Error calling https://192.168.0.9/api/v2/status/interfaces...
+[2024-11-08T19:28:48.856Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.9:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.9',
+    port: 443
+  }
+]
+[2024-11-08T19:28:48.947Z] error: <httpProxy> Error calling https://192.168.0.110:8443/...
+[2024-11-08T19:28:48.947Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.110:8443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.110',
+    port: 8443
+  }
+]
+[2024-11-08T19:28:51.969Z] error: <httpProxy> Error calling http://10.1.1.10/api/v2.0/pool...
+[2024-11-08T19:28:51.970Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.1.1.10:80
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.1.1.10',
+    port: 80
+  }
+]
+[2024-11-08T19:28:51.972Z] error: <credentialedProxyHandler> HTTP Error 500 calling http://10.1.1.10/api/v2.0/pool
+[2024-11-08T19:28:51.976Z] error: <httpProxy> Error calling http://10.1.1.10/api/v2.0/system/info...
+[2024-11-08T19:28:51.977Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.1.1.10:80
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.1.1.10',
+    port: 80
+  }
+]
+[2024-11-08T19:28:51.979Z] error: <credentialedProxyHandler> HTTP Error 500 calling http://10.1.1.10/api/v2.0/system/info
+[2024-11-08T19:28:51.990Z] error: <httpProxy> Error calling https://192.168.0.110:8443/...
+[2024-11-08T19:28:51.991Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.110:8443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.110',
+    port: 8443
+  }
+]
+[2024-11-08T19:28:51.993Z] error: <minecraftProxyHandler> Error: connect EHOSTUNREACH 192.168.0.110:25565
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+[2024-11-08T19:28:55.040Z] error: <httpProxy> Error calling http://10.1.1.11:8096/emby/Items/Counts...
+[2024-11-08T19:28:55.041Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.1.1.11:8096
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.1.1.11',
+    port: 8096
+  }
+]
+[2024-11-08T19:28:55.189Z] error: <httpProxy> Error calling https://192.168.0.12:9443/api/endpoints/2/docker/containers/json...
+[2024-11-08T19:28:55.189Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.12:9443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.12',
+    port: 9443
+  }
+]
+[2024-11-08T19:28:55.190Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://192.168.0.12:9443/api/endpoints/2/docker/containers/json?all=1
+[2024-11-08T19:29:22.752Z] error: <httpProxy> Error calling http://10.1.1.10/api/v2.0/alert/list...
+[2024-11-08T19:29:22.754Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.1.1.10:80
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.1.1.10',
+    port: 80
+  }
+]
+[2024-11-08T19:29:22.754Z] error: <credentialedProxyHandler> HTTP Error 500 calling http://10.1.1.10/api/v2.0/alert/list
+[2024-11-08T19:29:25.824Z] error: <httpProxy> Error calling http://10.1.1.11:8096/emby/Sessions...
+[2024-11-08T19:29:25.825Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 10.1.1.11:8096
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '10.1.1.11',
+    port: 8096
+  }
+]
+[2024-11-08T20:20:25.066Z] error: <httpProxy> Error calling https://192.168.0.110:8443/...
+[2024-11-08T20:20:25.247Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.110:8443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.110',
+    port: 8443
+  }
+]
+[2024-11-08T20:20:25.262Z] error: <minecraftProxyHandler> Error: connect EHOSTUNREACH 192.168.0.110:25565
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+[2024-11-08T20:20:25.787Z] error: <httpProxy> Error calling https://192.168.0.12:9443/api/endpoints/2/docker/containers/json...
+[2024-11-08T20:20:25.789Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.12:9443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.12',
+    port: 9443
+  }
+]
+[2024-11-08T20:20:25.790Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://192.168.0.12:9443/api/endpoints/2/docker/containers/json?all=1
+[2024-11-08T20:20:28.370Z] error: <httpProxy> Error calling https://192.168.0.110:8443/...
+[2024-11-08T20:20:28.374Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.110:8443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.110',
+    port: 8443
+  }
+]
+[2024-11-08T20:20:45.209Z] error: undefined
+[2024-11-08T20:20:45.218Z] error: <httpProxy> Error calling https://100.72.205.68:8006/...
+[2024-11-08T20:20:45.220Z] error: <httpProxy> [
+  500,
+  Error: Client network socket disconnected before secure TLS connection was established
+      at connResetException (node:internal/errors:720:14)
+      at TLSSocket.onConnectEnd (node:_tls_wrap:1714:19)
+      at TLSSocket.emit (node:events:529:35)
+      at endReadableNT (node:internal/streams/readable:1400:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    code: 'ECONNRESET',
+    path: null,
+    host: '100.72.205.68',
+    port: 8006,
+    localAddress: undefined
+  }
+]
+[2024-11-08T20:21:21.510Z] error: <httpProxy> Error calling https://192.168.0.12:9443/api/endpoints/2/docker/containers/json...
+[2024-11-08T20:21:21.511Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.12:9443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.12',
+    port: 9443
+  }
+]
+[2024-11-08T20:21:21.513Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://192.168.0.12:9443/api/endpoints/2/docker/containers/json?all=1
+[2024-11-08T20:21:21.833Z] error: <httpProxy> Error calling https://192.168.0.110:8443/...
+[2024-11-08T20:21:21.835Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.110:8443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.110',
+    port: 8443
+  }
+]
+[2024-11-08T20:21:21.842Z] error: <minecraftProxyHandler> Error: connect EHOSTUNREACH 192.168.0.110:25565
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+[2024-11-08T20:21:24.896Z] error: <httpProxy> Error calling https://192.168.0.110:8443/...
+[2024-11-08T20:21:24.898Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.110:8443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.110',
+    port: 8443
+  }
+]
+[2024-11-08T20:33:02.781Z] error: <httpProxy> Error calling https://192.168.0.12:9443/api/endpoints/2/docker/containers/json...
+[2024-11-08T20:33:02.790Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.12:9443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.12',
+    port: 9443
+  }
+]
+[2024-11-08T20:33:02.793Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://192.168.0.12:9443/api/endpoints/2/docker/containers/json?all=1
+[2024-11-08T20:33:11.930Z] error: <httpProxy> Error calling https://192.168.0.12:9443/api/endpoints/2/docker/containers/json...
+[2024-11-08T20:33:11.932Z] error: <httpProxy> [
+  500,
+  Error: connect EHOSTUNREACH 192.168.0.12:9443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -113,
+    code: 'EHOSTUNREACH',
+    syscall: 'connect',
+    address: '192.168.0.12',
+    port: 9443
+  }
+]
+[2024-11-08T20:33:11.933Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://192.168.0.12:9443/api/endpoints/2/docker/containers/json?all=1

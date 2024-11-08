@@ -1,7 +1,10 @@
-*.env
+*.env*
 *_venv
 __pycache__
 *.ssh
 id_rsa
 id_rsa.pub
 *.log
+
+gitlab/config/*
+!gitlab/config/gitlab.rb
