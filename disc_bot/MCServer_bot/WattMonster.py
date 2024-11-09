@@ -8,6 +8,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 WATTMONSTER_PWD = os.getenv('WATTMONSTER_PWD')
+GAMING_LAPTOP_MAC = os.getenv('GAMING_LAPTOP_MAC')
 
 def is_up(hostname : str):
     response = os.system("ping -c 1 " + hostname)
@@ -22,6 +23,11 @@ def is_up(hostname : str):
 
 
 def awake_the_monster(ip:str, mac: str):
+    if mac == GAMING_LAPTOP_MAC:
+        for i in range(0,10):
+            send_magic_packet(mac)    
+        return 
+        
     while not is_up(ip):
         send_magic_packet(mac)
     return 
