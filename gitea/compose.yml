@@ -1,0 +1,48 @@
+services:
+  server:
+    image: gitea/gitea:1.22.3-rootless
+    restart: unless-stopped
+    container_name: gitea
+    # volumes:
+    #   - ./data:/var/lib/gitea
+    #   - ./config:/etc/gitea
+    #   - /etc/timezone:/etc/timezone:ro
+    #   - /etc/localtime:/etc/localtime:ro
+    volumes:
+      - type: volume
+        source: gitea-config
+        target: /etc/gitea
+      - type: volume
+        source: gitea-data
+        target: /var/lib/gitea
+      - type: volume
+        read_only: true
+        source: gitea-etc
+        target: /etc/timezone
+      - type: volume
+        source: gitea-etc
+        read_only: true
+        target: /etc/localtime
+    ports:
+      - "3500:3000"
+      - "2222:2222"
+
+volumes:
+  gitea-config:
+    driver: local
+    driver_opts:
+      type: none
+      o: 'bind'
+      device: '${MOUNT_PATH}/gitea/config'
+  gitea-data:
+    driver: local
+    driver_opts:
+      type: none
+      o: 'bind'
+      device: '${MOUNT_PATH}/gitea/data'
+  gitea-etc:
+    driver: local
+    driver_opts:
+      type: none
+      o: 'bind'
+      device: '${MOUNT_PATH}/gitea/etc'
