@@ -1,6 +1,6 @@
 services:
   server:
-    image: gitea/gitea:1.22.3-rootless
+    image: gitea/gitea:latest-rootless
     restart: unless-stopped
     container_name: gitea
     # volumes:

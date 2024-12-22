@@ -88,6 +88,15 @@
             url: http://{{HOMEPAGE_VAR_WUD_IP}}:{{HOMEPAGE_VAR_WUD_PORT}}
             fields: ["monitoring", "updates"]
 
+    - Gitea:
+        href: http://{{HOMEPAGE_VAR_GIT_IP}}:{{HOMEPAGE_VAR_GIT_PORT}}/
+        description: My local git install
+        icon: gitea
+        widget:
+            type: gitea
+            url: http://{{HOMEPAGE_VAR_GIT_IP}}:{{HOMEPAGE_VAR_GIT_PORT}}
+            key: {{HOMEPAGE_VAR_GIT_TOKEN}}
+
 - External Clicks:
     - Watt-Monster:
             href: https://{{HOMEPAGE_VAR_WATTMONSTER_EXT_IP}}:8006
@@ -105,6 +114,11 @@
         description: Monitoring
         icon: grafana
         href: http://{{HOMEPAGE_VAR_GRAFANA_EXT_IP}}:3000/d/IfgdXjtnk
+
+    - Gitea:
+        href: http://{{HOMEPAGE_VAR_GIT_IP_EXT}}:{{HOMEPAGE_VAR_GIT_PORT}}/
+        description: My local git install
+        icon: gitea
 
     - PFSense:
         href: https://{{HOMEPAGE_VAR_PFSENSE_EXT_IP}}/

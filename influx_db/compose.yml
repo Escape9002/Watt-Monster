@@ -1,7 +1,7 @@
 services:
  
   influxdb2:
-    image: influxdb:2
+    image: influxdb:latest
     container_name: influx-db2
     restart: unless-stopped
     ports:
