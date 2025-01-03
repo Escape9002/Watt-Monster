@@ -61,6 +61,31 @@
             showEpisodeNumber: true # optional, defaults to false
             expandOneStreamToTwoRows: false # optional, defaults to true
 
+    - Syncthing: 
+        icon: syncthing.png
+        href: http://{{HOMEPAGE_VAR_SYNCTHING_IP}}:{{HOMEPAGE_VAR_SYNCTHING_PORT}}
+        ping: http://{{HOMEPAGE_VAR_SYNCTHING_IP}}:{{HOMEPAGE_VAR_SYNCTHING_PORT}}
+        description: Syncs Data
+        widget:
+          type: customapi
+          url: http://{{HOMEPAGE_VAR_SYNCTHING_IP}}:{{HOMEPAGE_VAR_SYNCTHING_PORT}}/rest/svc/report
+          method: GET
+          headers:
+            X-API-Key: '{{HOMEPAGE_VAR_SYNCTHING_API_KEY}}'
+          mappings:
+            - field: totMiB
+              label: Stored (MB)
+              format: number
+            - field: numFolders
+              label: Folders
+              format: number
+            - field: totFiles
+              label: Files
+              format: number
+            - field: numDevices
+              label: Devices
+              format: number
+
 - Watt-Morpheus:
     - Watt-Morpheus:
         href: https://{{HOMEPAGE_VAR_WATTMORPHEUS_IP}}:8006
