@@ -1,0 +1,65 @@
+services:
+  crafty:
+    container_name: crafty_container
+    image: registry.gitlab.com/crafty-controller/crafty-4:latest
+    restart: unless-stopped
+    environment:
+        - TZ=Etc/UTC
+    ports:
+        - "8443:8443" # HTTPS
+        - "8123:8123" # DYNMAP
+        - "19132:19132/udp" # BEDROCK
+        - "25500-25600:25500-25600" # MC SERV PORT RANGE
+    volumes:
+      - type: volume
+        source: crafty-backups
+        target: /crafty/backups
+      - type: volume
+        source: crafty-logs
+        target: /crafty/logs
+      - type: volume
+        source: crafty-servers
+        target: /crafty/servers
+      - type: volume
+        source: crafty-config
+        target: /crafty/config
+      - type: volume
+        source: crafty-import
+        target: /crafty/import
+
+ 
+volumes:
+  crafty-backups:
+    driver: local
+    driver_opts:
+      type: none
+      o: 'bind'
+      device: ${MOUNT_PATH}/backups
+
+  crafty-logs:
+    driver: local
+    driver_opts:
+      type: none
+      o: 'bind'
+      device: ${MOUNT_PATH}/logs
+  
+  crafty-servers:
+    driver: local
+    driver_opts:
+      type: none
+      o: 'bind'
+      device: ${MOUNT_PATH}/servers
+
+  crafty-config:
+    driver: local
+    driver_opts:
+      type: none
+      o: 'bind'
+      device: ${MOUNT_PATH}/config
+
+  crafty-import:
+    driver: local
+    driver_opts:
+      type: none
+      o: 'bind'
+      device: ${MOUNT_PATH}/import

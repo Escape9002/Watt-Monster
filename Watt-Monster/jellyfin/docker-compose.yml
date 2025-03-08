@@ -1,0 +1,41 @@
+services:
+  jellyfin:
+    image: jellyfin/jellyfin
+    container_name: jellyfin
+    ports: 
+      - 8096:8096
+
+    volumes:
+      - type: volume
+        source: jellyfin-config
+        target: /config
+      - type: volume 
+        source: jellyfin-cache
+        target: /cache
+      - type: volume
+        source: jellyfin-media
+        target: /media
+        
+    restart: 'unless-stopped'
+    
+volumes:
+  jellyfin-config:
+    driver: local
+    driver_opts:
+      type: none
+      o: 'bind'
+      device: ${MOUNT_PATH}/jellyfin-config
+
+  jellyfin-cache:
+    driver: local
+    driver_opts:
+      type: none
+      o: 'bind'
+      device: ${MOUNT_PATH}/jellyfin-cache
+
+  jellyfin-media:
+    driver: local
+    driver_opts:
+      type: "nfs"
+      o: addr=${TRUENAS_IP},rw
+      device: :${TRUENAS_MOUNT_PATH}
